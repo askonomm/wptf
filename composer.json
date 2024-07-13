@@ -1,0 +1,14 @@
+{
+  "name": "wptf/wptf",
+  "type": "project",
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "require": {
+    "asko/router": "^3.0",
+    "spatie/ray": "^1.41",
+    "wptf/core": "^0.1.5"
+  }
+}
