@@ -18,7 +18,7 @@ class SiteController
         $posts = (new Post())
             ->query()
             ->where('post_type', '=', 'post')
-            ->where('post_status', '=', 'publish')
+            ->andWhere('post_status', '=', 'publish')
             ->orderBy('post_date', 'DESC')
             ->limit(10)
             ->get();
@@ -31,16 +31,16 @@ class SiteController
     /**
      * Page
      *
-     * @param string $page
+     * @param string $slug
      * @return Response
      * @throws \Exception
      */
-    public function page(string $page): Response
+    public function post(string $slug): Response
     {
-        $post = (new Post)->query()->where('post_name', '=', $page)->first();
+        $post = (new Post)->query()->where('post_name', '=', $slug)->first();
 
-        return Response::view('page', [
-            'page' => $post
+        return Response::view('post', [
+            'post' => $post
         ]);
     }
 }

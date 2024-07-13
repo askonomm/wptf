@@ -22,7 +22,7 @@ A thin PHP framework for building WordPress themes.
 Go to the `themes` directory and run the following command (obviously replacing `my-theme` with your theme name):
 
 ```bash
-composer create-project wptf/wptf my-theme
+composer create-project wptf/wptf my-theme --no-dev
 ```
 
 ## Updating
