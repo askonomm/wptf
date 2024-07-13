@@ -1,6 +1,6 @@
-# WPTF 
+# WPTF
 
-WPTF is a thin PHP framework for building WordPress themes.
+A thin PHP framework for building WordPress themes.
 
 ## Features
 
@@ -13,7 +13,7 @@ WPTF is a thin PHP framework for building WordPress themes.
 
 ## Requirements
 
-- PHP 8.2 or higher
+- PHP 8.3+
 - [Composer](https://getcomposer.org/)
 - [Node.js](https://nodejs.org) (used only to compile Tailwind)
 
@@ -27,7 +27,8 @@ composer create-project wptf/wptf my-theme
 
 ## Updating
 
-Update instructions can be found under each new release on the [releases page](https://github.com/askonomm/wptf/releases).
+Update instructions can be found under each new release on
+the [releases page](https://github.com/askonomm/wptf/releases).
 
 ## Documentation
 

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html {{ language_attributes() | raw }}>
+<head>
+    <meta charset="{{ bloginfo('charset') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{ wp_title() | raw }}
+    {{ wp_head() | raw }}
+    {{ styles() | raw }}
+</head>
+<body class="bg-white">
+
+{% block content %}{% endblock %}
+
+{{ wp_footer() | raw }}
+
+</body>
+</html>
