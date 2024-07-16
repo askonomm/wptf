@@ -8,19 +8,8 @@
       "App\\": "src/"
     }
   },
-  "autoload-dev": {
-    "files": [
-      "vendor/php-stubs/acf-pro-stubs/acf-pro-stubs.php",
-      "vendor/php-stubs/wordpress-stubs/wordpress-stubs.php"
-    ]
-  },
   "require": {
     "asko/router": "^3.0",
-    "wptf/core": "^0.1.10"
-  },
-  "require-dev": {
-    "spatie/ray": "^1.41",
-    "php-stubs/acf-pro-stubs": "^6.2",
-    "php-stubs/wordpress-stubs": "^6.5"
+    "wptf/core": "^0.1.13"
   }
 }

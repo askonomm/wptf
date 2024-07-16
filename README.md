@@ -1,6 +1,6 @@
 # WPTF
 
-A thin PHP framework for building bespoke WordPress themes.
+A thin PHP framework for building bespoke block-based WordPress themes.
 
 ## Features
 
@@ -8,7 +8,6 @@ A thin PHP framework for building bespoke WordPress themes.
 - **Logic/Presentation Separation**: Enhances code maintainability by separating logic from presentation.
 - **Twig Templates**: Employs Twig for flexible, reusable view templates.
 - **ORM and Active Record**: Includes a simple ORM and Active Record implementation for data manipulation.
-- **Routing Control**: Offers customizable routing for unique routes and endpoints.
 - **ACF Blocks**: Supports ACF blocks for easy custom block creation.
 - **Tailwind CSS**: Integrates Tailwind for efficient, attractive designs.
 
@@ -23,7 +22,7 @@ A thin PHP framework for building bespoke WordPress themes.
 Go to the `themes` directory and run the following command (obviously replacing `my-theme` with your theme name):
 
 ```bash
-composer create-project wptf/wptf my-theme --no-dev
+composer create-project wptf/wptf my-theme
 ```
 
 ## Updating

@@ -1,9 +1,0 @@
-{% extends 'layouts/base.twig' %}
-
-{% block content %}
-    <div class="container">
-        {% for post in posts %}
-            {% include 'partials/post.twig' with {'post': post} %}
-        {% endfor %}
-    </div>
-{% endblock %}

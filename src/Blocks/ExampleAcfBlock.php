@@ -61,7 +61,7 @@ class ExampleAcfBlock extends AcfBaseBlock
      */
     public function render(array $block, string $content, bool $is_preview, int $post_id): Response
     {
-        return Response::view('blocks/example-acf', [
+        return Response::view('example-acf', [
             'content' => $content
         ]);
     }
