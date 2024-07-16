@@ -1,6 +1,6 @@
 # WPTF
 
-A thin PHP framework for building bespoke block-based WordPress themes.
+A boilerplate WordPress theme for creating block-based bespoke WordPress sites.
 
 ## Features
 
