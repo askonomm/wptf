@@ -4,18 +4,14 @@ A boilerplate WordPress theme for creating block-based bespoke WordPress sites.
 
 ## Features
 
-- **Modern PHP**: Utilizes current PHP practices for WordPress theme development.
-- **Logic/Presentation Separation**: Enhances code maintainability by separating logic from presentation.
-- **Twig Templates**: Employs Twig for flexible, reusable view templates.
-- **ORM and Active Record**: Includes a simple ORM and Active Record implementation for data manipulation.
-- **ACF Blocks**: Supports ACF blocks for easy custom block creation.
-- **Tailwind CSS**: Integrates Tailwind for efficient, attractive designs.
+- **ACF Blocks**: Create ACF blocks with PHP, Twig templating and Tailwind CSS.
+- **Gutenberg Blocks**: Create Gutenberg blocks with JavaScript and SCSS.
 
 ## Requirements
 
 - PHP 8.3+
 - [Composer](https://getcomposer.org/)
-- [Node.js](https://nodejs.org) (used only to compile Tailwind)
+- [Node.js](https://nodejs.org)
 
 ## Installation
 
@@ -32,4 +28,41 @@ the [releases page](https://github.com/askonomm/wptf/releases).
 
 ## Documentation
 
-To be written. For now, please refer to the codebase.
+### ACF Blocks
+
+You can create ACF blocks by creating a new AcfBaseBlock class in the `src/Blocks/{BlockName}` directory. The class
+should extend the `AcfBaseBlock` class and implement the `render` method.
+
+```php
+namespace App\Blocks\ExampleAcfBlock;
+
+use Wptf\Core\Blocks\AcfBaseBlock;
+use Wptf\Core\View;
+
+class Block extends AcfBaseBlock
+{
+    public function render(array $block, string $content, bool $is_preview, int $post_id): string
+    {
+        return (new View(__DIR__))->make('block', [
+            'content' => $content
+        ]);
+    }
+}
+```
+
+All your logic should be within this class, and the presentation of the block should be rendered using the `View` class,
+which renders a Twig template.
+
+### Gutenberg Blocks
+
+To create a new Gutenberg block, go to the `src/Blocks` directory, and run the following command:
+
+```bash
+npx @wordpress/create-block@latest example-block
+```
+
+### Register Blocks
+
+To register your blocks (i.e. make them available for use), you need to add them in the config file located
+at `src/Blocks/config.php`. You can follow
+the example set there by default.

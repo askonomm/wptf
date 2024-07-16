@@ -1,18 +1,18 @@
 <?php
 
-namespace App\Blocks;
+namespace App\Blocks\ExampleAcfBlock;
 
 use Wptf\Core\Blocks\AcfBaseBlock;
-use Wptf\Core\Response;
+use Wptf\Core\View;
 
-class ExampleAcfBlock extends AcfBaseBlock
+class Block extends AcfBaseBlock
 {
     /**
      * Block title
      *
      * @var string $title
      */
-    public string $title = 'Example Block';
+    public string $title = 'Example ACF Block';
 
     /**
      * Block description
@@ -56,12 +56,12 @@ class ExampleAcfBlock extends AcfBaseBlock
      * @param string $content
      * @param bool $is_preview
      * @param int $post_id
-     * @return Response
+     * @return string
      * @throws \Exception
      */
-    public function render(array $block, string $content, bool $is_preview, int $post_id): Response
+    public function render(array $block, string $content, bool $is_preview, int $post_id): string
     {
-        return Response::view('example-acf', [
+        return (new View(__DIR__))->make('block', [
             'content' => $content
         ]);
     }

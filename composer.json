@@ -9,7 +9,6 @@
     }
   },
   "require": {
-    "asko/router": "^3.0",
-    "wptf/core": "^0.1.15"
+    "wptf/core": "^0.1.17"
   }
 }
