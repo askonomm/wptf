@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ["./src/Views/**/*.twig"],
+    content: ["./src/Blocks/**/*.twig"],
     theme: {
         fontFamily: {
             // sans: ["Merriweather Sans", "sans-serif"],
