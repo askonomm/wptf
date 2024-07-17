@@ -9,6 +9,6 @@
     }
   },
   "require": {
-    "wptf/core": "^0.1.17"
+    "wptf/core": "^0.2"
   }
 }

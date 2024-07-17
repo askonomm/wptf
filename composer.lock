@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "adf3449734e2632089c14acb022ee2f6",
+    "content-hash": "098134da0fce4661335727696c5a8ef5",
     "packages": [
         {
             "name": "symfony/deprecation-contracts",
@@ -393,16 +393,16 @@
         },
         {
             "name": "wptf/core",
-            "version": "v0.1.17",
+            "version": "v0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/askonomm/wptf-core.git",
-                "reference": "6bde817a4cd3edfb991899f3b1b07220fea00dcc"
+                "reference": "0e0bc6f01d7e8e03fec926894526599832579bbd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/askonomm/wptf-core/zipball/6bde817a4cd3edfb991899f3b1b07220fea00dcc",
-                "reference": "6bde817a4cd3edfb991899f3b1b07220fea00dcc",
+                "url": "https://api.github.com/repos/askonomm/wptf-core/zipball/0e0bc6f01d7e8e03fec926894526599832579bbd",
+                "reference": "0e0bc6f01d7e8e03fec926894526599832579bbd",
                 "shasum": ""
             },
             "require": {
@@ -428,9 +428,9 @@
             "description": "Core of the WPTF",
             "support": {
                 "issues": "https://github.com/askonomm/wptf-core/issues",
-                "source": "https://github.com/askonomm/wptf-core/tree/v0.1.17"
+                "source": "https://github.com/askonomm/wptf-core/tree/v0.2"
             },
-            "time": "2024-07-16T23:05:51+00:00"
+            "time": "2024-07-17T06:53:00+00:00"
         }
     ],
     "packages-dev": [],
