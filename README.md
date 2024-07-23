@@ -4,7 +4,7 @@ A boilerplate WordPress theme for creating block-based bespoke WordPress sites.
 
 ## Features
 
-- **ACF Blocks**: Create ACF blocks with PHP, Twig templating and Tailwind CSS.
+- **ACF Blocks**: Create ACF blocks with PHP and Twig templating.
 - **Gutenberg Blocks**: Create Gutenberg blocks with JavaScript and SCSS.
 
 ## Requirements
