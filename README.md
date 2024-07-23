@@ -11,7 +11,6 @@ A boilerplate WordPress theme for creating block-based bespoke WordPress sites.
 
 - PHP 8.3+
 - [Composer](https://getcomposer.org/)
-- [Node.js](https://nodejs.org)
 
 ## Installation
 
