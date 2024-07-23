@@ -1,6 +1,0 @@
-{
-  "scripts": {
-    "css:build": "npx tailwindcss -i assets/styles.css -o assets/styles.min.css",
-    "css:watch": "npx tailwindcss -i assets/styles.css -o assets/styles.min.css --watch"
-  }
-}
