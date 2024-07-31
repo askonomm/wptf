@@ -1,6 +1,6 @@
 {
   "name": "wptf/wptf",
-  "description": "A WordPress Theme Framework",
+  "description": "A boilerplate WordPress theme for creating block-based bespoke WordPress sites.",
   "type": "project",
   "license": "MIT",
   "autoload": {
@@ -9,6 +9,6 @@
     }
   },
   "require": {
-    "wptf/core": "^0.2.1"
+    "wptf/core": "^0.3"
   }
 }
