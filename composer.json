@@ -8,6 +8,11 @@
       "App\\": "src/"
     }
   },
+  "scripts": {
+	  "post-root-package-install": [
+	  	"npm install"
+	  ]
+  },
   "require": {
     "wptf/core": "^0.3"
   }

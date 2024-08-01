@@ -1,4 +1,4 @@
 .DS_Store
 /.idea
 /vendor
-/assets/styles.min.css
+/node_modules
