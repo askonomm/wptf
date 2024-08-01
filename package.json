@@ -1,0 +1,10 @@
+{
+	"type": "module",
+	"scripts": {
+		"create-acf-block": "node create-acf-block.js",
+		"create-block": "npx @wordpress/create-block"
+	},
+	"dependencies": {
+		"shelljs": "^0.8.4"
+	}
+}
