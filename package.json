@@ -2,7 +2,7 @@
 	"type": "module",
 	"scripts": {
 		"create-acf-block": "node create-acf-block.js",
-		"create-block": "cd src/Blocks && npx @wordpress/create-block"
+		"create-block": "cd src/Blocks && npx @wordpress/create-block --no-plugin --namespace wptf"
 	},
 	"dependencies": {
 		"shelljs": "^0.8.4"
